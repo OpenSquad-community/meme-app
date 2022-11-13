@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<p class="meme">
+    <h1>Meme by : {{ subreddit }}</h1>
+    <hr>
+    <img src="{{meme_pic}}" align="center" class="memeImg">
+    <hr>
+</p>
+
+{% endblock content %}

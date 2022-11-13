@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+}
+.center{
+    border: 5px;
+    text-align: center;
+    align-content: center;
+    size:100px;
+}
+h1{
+    color: rgb(133, 247, 255);
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.greet{
+    color: rgb(183, 255, 255);
+    font-size: 48px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+} 
+.section{
+    color: rgb(17, 15, 15);
+}
+.memeImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 600px;
+}
+.nameinput{
+    width: 500px;
+    height: 70px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.submit{
+    background-color: palevioletred;
+    color :White;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+
+}
+.submit:hover{
+    background-color: mediumvioletred;
+    cursor: pointer;
+}
+.Proceed{
+    background-color: palevioletred;
+    color :White;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+.Proceed:hover{
+    background-color: mediumvioletred;
+    cursor: pointer;
+}

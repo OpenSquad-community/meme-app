@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+   <div class="greet">
+   <h1> Hello , {{ name }} want to see some memes</h1>
+   <hr>
+   <div>
+      <form action="/meme", method="post">
+      <link href=".Proceed"/>
+         <br><br>
+      <button class="Proceed" type="submit">Procced</button>
+      </form>
+   </div>
+   </div>
+{% endblock content %}
