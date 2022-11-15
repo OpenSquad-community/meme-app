@@ -3,7 +3,7 @@ import get_meme
 import os
 
 app = Flask(__name__)
-PORT = int(os.environ.get('PORT', 5000))
+port = int(os.environ.get('PORT', 5000))
 
 @app.route('/', methods=['GET','POST'])
 def home():
@@ -24,4 +24,4 @@ def favicon():
         'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ =="__main__":
-    app.run(host='0.0.0.0', port=PORT)
+    app.run(host='0.0.0.0', port=port)

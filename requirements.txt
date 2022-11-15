@@ -82,7 +82,6 @@ pyparsing==3.0.9
 pyrsistent==0.19.2
 python-dateutil==2.8.2
 pytz==2022.2.1
-pywin32==303
 pywinpty==2.0.9
 pyzmq==22.3.0
 regex==2022.9.13
