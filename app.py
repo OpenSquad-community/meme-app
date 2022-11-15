@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 import get_meme
+import os
 
 app = Flask(__name__)
-
+port = int(os.environ.get('PORT', 5000))
 
 @app.route('/', methods=['GET','POST'])
 def home():
@@ -17,5 +18,10 @@ def meme_func():
     meme_pic, subreddit = get_meme.get_meme()
     return render_template("show_meme.html", meme_pic=meme_pic, subreddit=subreddit)
 
+# @app.route('/favicon.ico')
+# def favicon():
+#     return send_from_directory(os.path.join(app.root_path, 'static'),
+#         'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
 if __name__ =="__main__":
-    app.run(debug=True ,host="0.0.0.0")
+    app.run(host='0.0.0.0', port=port)
